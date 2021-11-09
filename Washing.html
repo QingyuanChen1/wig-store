@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="website">
+    <header>Free Shipping to Canada Over 100</header>
+    <h1>Stacey Wig Store</h1>
+    <ul class="container">
+        <li class="tag"><a href="#">Home</a></li>
+        <li class="tag"><a href="#">Wig Page</a></li>
+        <li class="tag"><a href="#">Styling Service</a></li>
+        <li class="tag">
+            <a class="secondary" id="secondary" onclick="menu()" href="#">Maintenance Service <span class="fas fa-caret-down down"></span></a>
+            <ul class="subtag" id="subtag">
+                <li><a href="Template.html">Hair Add</a></li>
+                <li><a href="Washing.html">Washing</a></li>
+            </ul>
+        </li>
+
+        <li class="tag"><a href="#">How to Use</a></li>
+        <li class="tag"><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="navbar"><p>Maintainence Service</p></div>
+    <div class="description">
+        <img src="picture/conditioner.png" alt="des" width="650" height="450">
+        <h3>Hair Add</h3>
+        <p>Our expert Toronto wig maker is in once a week to repair caps or fill in older pieces that may have lost hair over time. Clients are required to book their service in advance and will be asked to show up 30-45 min prior to the booking to have their piece washed. Once the hair add is complete, our stylist will finish the piece and make adjustments to blend the new hair.
+            <br><br>Stacey Wig Store only services products purchased through our company, as we cannot guarantee the quality of products purchased elsewhere. Thank you for your understanding.</p>
+        <button>Add to Cart</button>
+
+        <select name="hair" id="hair" class="selection1">
+            <option value="title">Select Which Part of The Hair You Want to Add</option>
+            <option value="front">Front Hair</option>
+            <option value="back">Back Hair</option>
+            <option value="left">Left Hair</option>
+            <option value="right">Right Hair</option>
+        </select>
+        <select name="hair1" id="hair1" class="selection2">
+            <option value="title1">Numbers</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+        </select>
+        <form class="comment">
+            <label for="comment">Comments:</label>
+            <input type="text" id="comment" name="comment"><br><br>
+        </form>
+    </div>
+    <script>
+        let boolean = true;
+        function menu() {
+            if(boolean=== true){
+                document.getElementById("subtag").style.display ='block';
+                boolean = false;
+            }
+            else{
+                document.getElementById("subtag").style.display ='none';
+                boolean = true;
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
