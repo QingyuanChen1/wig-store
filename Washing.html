@@ -1,33 +1,34 @@
-<link rel="stylesheet" href="maintainence.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
+</head>
+<body>
 <div class="website">
     <header>Free Shipping to Canada Over 100</header>
     <h1>Stacey Wig Store</h1>
-    <div class="content">
-        <ul class="container">
-            <li class="tag"><a href="/">Home</a></li>
-            <li class="tag"><a href="/">Wig Page</a></li>
-            <li class="tag"><a href="/">Styling Service</a></li>
-            <li class="tag"><a href="/">Maintenance Service</a></li>
-            <li class="tag"><a href="/">How to Use</a></li>
-            <li class="tag"><a href="/">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="picture-page">
-        <div class="item one"><img src="picture/blon.png" alt="blon hair" width="100" height="100"/></div>
-        <div class="item two"><p>Passion is Energy :p</p></div>
-        <div class="item three"><img src="picture/bluehair.png" alt="blue hair" width="100" height="100"/></div>
-        <div class="item five">
-            <p class="title">Maintenance Service</p>
-            <img src="picture/decorativeline.png" alt="break line"  width="300" height="50"/>
-            <p class="subtitle">Best Wigs Deserves The Best Maintenance</p>
-        </div>
-        <div class="item six"><img src="picture/blon2.png" alt="blon hair" width="100" height="100" /></div>
-        <div class="item sen"><p>Beauty is Our Duty :)</p></div>
-        <div class="item eight"><img src="picture/men%201.png" alt="blon hair" width="100" height="100"/></div>
-    </div>
-    
+    <ul class="container">
+        <li class="tag"><a href="#">Home</a></li>
+        <li class="tag"><a href="#">Wig Page</a></li>
+        <li class="tag"><a href="#">Styling Service</a></li>
+        <li class="tag">
+            <a class="secondary" id="secondary" onclick="menu()" href="#">Maintenance Service <span class="fas fa-caret-down down"></span></a>
+            <ul class="subtag" id="subtag">
+                <li><a href="Template.html">Hair Add</a></li>
+                <li><a href="Washing.html">Washing</a></li>
+            </ul>
+        </li>
+
+        <li class="tag"><a href="#">How to Use</a></li>
+        <li class="tag"><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="navbar"><p>Maintainence Service</p></div>
     <div class="description">
-        <img src="picture/descriptionpage.jpeg" alt="des" width="650" height="450">
+        <img src="picture/conditioner.png" alt="des" width="650" height="450">
         <h3>Hair Add</h3>
         <p>Our expert Toronto wig maker is in once a week to repair caps or fill in older pieces that may have lost hair over time. Clients are required to book their service in advance and will be asked to show up 30-45 min prior to the booking to have their piece washed. Once the hair add is complete, our stylist will finish the piece and make adjustments to blend the new hair.
             <br><br>Stacey Wig Store only services products purchased through our company, as we cannot guarantee the quality of products purchased elsewhere. Thank you for your understanding.</p>
@@ -51,8 +52,29 @@
             <label for="comment">Comments:</label>
             <input type="text" id="comment" name="comment"><br><br>
         </form>
-
     </div>
-
-
+    <script>
+        let boolean = true;
+        function menu() {
+            if(boolean=== true){
+                document.getElementById("subtag").style.display ='block';
+                boolean = false;
+            }
+            else{
+                document.getElementById("subtag").style.display ='none';
+                boolean = true;
+            }
+        }
+    </script>
 </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
