@@ -22,7 +22,7 @@ body{
     width: 900px;
     margin: 0 auto;
   }
-  .card 1{
+  .card1{
     /* 設定父親定位點 */
     position: relative;
     width: 270px;
@@ -30,7 +30,7 @@ body{
     margin: 10px; }
 
 
-  .card 2{
+  .card2{
       position: relative;
       width: 270px;
       float:right;
