@@ -1,65 +1,196 @@
-/* anything */
+* {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: rgb(244, 145, 145);
+  margin: 10px 0 10px 0;
+  font-family: "Sofia", sans-serif;
+}
 
-body{
-    background-color:#FFCDD2;
-   
-  }
-  .slogn{
-    text-align: center;
-    font-style:oblique;
-  }
-  .title{
-      text-align: center;
-    
-  }
+header {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-  nav{
-    text-align:center;
-    
-  }
+.container {
+  z-index: 10;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(255, 245, 245);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+.container .tag a {
+  text-decoration: none;
+  color: grey;
+}
 
-  .container{
-    width: 900px;
-    margin: 0 auto;
-  }
-  .card1{
-    /* 設定父親定位點 */
-    position: relative;
-    width: 270px;
-    float:left;
-    margin: 10px; }
+.tag {
+  margin-top: 1rem;
+  list-style: none;
+}
+.subtag {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 245, 245);
+  display: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
 
+span {
+  transform: translateY(-5%);
+  font-size: 15px;
+  transition: transform 0.2s;
+}
+.container li a:hover span {
+  transform: translateY(-5%) rotate(-180deg);
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  background-image: url("picture/photo-1595475884562-073c30d45670.jpg");
+  background-size: 1920px;
+  background-position: -1px -759px;
+  background-repeat: no-repeat;
+}
 
-  .card2{
-      position: relative;
-      width: 270px;
-      float:right;
-      margin: 10px;
-  }
-  img{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .info{
-  /*   display: none; */
-    opacity: 0;
-    position: absolute;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,.3);
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 40px;
-    -webkit-transition:.5s ease-out;
-    
-  }
-  .info p{
-    color: #fff;
-  }
-  .info:hover{
-  /*   -webkit-transition: 500ms; */
-    margin-top: 0;
-    opacity: 1;  
-  }
+.navbar p {
+  display: flex;
+  font-family: "Sofia", sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: -10;
+}
+.description {
+  width: 85%;
+  height: 60%;
+  margin: 30px auto auto auto;
+  display: grid;
+  grid-template-columns: 680px 800px 82px;
+  grid-template-rows: 30px 300px 300px;
+  gap: 5px;
+}
+.description img {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.description h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 1;
+}
+.description p {
+  font-size: 1.2em;
+  font-weight: normal;
+  grid-column: 2;
+  grid-row: 2;
+  width: 600px;
+  height: 500px;
+}
+
+.description button {
+  margin-left: 50px;
+  grid-column: 3;
+  grid-row: 1;
+  width: 90px;
+  height: 50px;
+}
+.selection {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.selection1 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 350px;
+  height: 50px;
+  padding-left: 10px;
+}
+.selection2 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-left: 370px;
+}
+.comment {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 12px 0 0 490px;
+  display: flex;
+}
+
+.comment input {
+  flex-direction: row;
+  width: 300px;
+  height: 100px;
+  margin-left: 10px;
+}
+.content {
+  color: #242424;
+  background-color: black;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 30px;
+}
+ {
+  border-color: red 2px solid;
+}
+.a22 {
+  border-color: red 2px solid;
+}
+.container2 {
+  align-items: center;
+}
+.box {
+  border-radius: 5em;
+}
+.FIG1 {
+  background: #4d4d4d;
+  border-radius: 50%;
+  height: 500px;
+}
+
+.FIG2 {
+  border-radius: 20%;
+  height: 500px;
+}
+
+.container3 {
+  z-index: 10;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.container4 {
+  margin-top: 50em;
+  z-index: 10;
+  width: auto;
+  height: 10rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
