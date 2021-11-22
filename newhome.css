@@ -1,0 +1,301 @@
+.item1 {
+  grid-area: language;
+}
+.item2 {
+  grid-area: promotion;
+}
+.item3 {
+  grid-area: title;
+}
+.item4 {
+  grid-area: navIcons;
+}
+.item5 {
+  grid-area: searchBar;
+}
+.item6 {
+  grid-area: navBar;
+}
+.item7 {
+  grid-area: leftsection;
+}
+.item8 {
+  grid-area: rightsection;
+}
+
+.item9 {
+  grid-area: leftsection1;
+  margin: 30px;
+}
+
+.item10 {
+  grid-area: middle1;
+  margin: 30px;
+}
+.item11 {
+  grid-area: rightsection1;
+  margin: 30px;
+}
+
+.item12 {
+  grid-area: lowersection1;
+  margin-top: 15px;
+}
+
+.item13 {
+  grid-area: lowersection2;
+  margin-top: 15px;
+}
+
+.item14 {
+  grid-area: lowersection3;
+  margin-top: 15px;
+}
+
+.item15 {
+  grid-area: lowersection4;
+  margin-top: 15px;
+}
+
+.item16 {
+  grid-area: lowersection5;
+  margin-top: 15px;
+}
+
+.item17 {
+  grid-area: lowersection6;
+  margin-top: 15px;
+}
+.hair-1 {
+  grid-area: hair-a;
+}
+.hair-2 {
+  grid-area: hair-b;
+}
+.hair-3 {
+  grid-area: hair-c;
+}
+.hair-4 {
+  grid-area: hair-d;
+}
+.hair-5 {
+  grid-area: hair-e;
+}
+.hair-6 {
+  grid-area: hair-f;
+}
+
+.radius3 {
+  border-radius: 50%;
+}
+.button-a {
+  grid-area: button0;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Customer-show {
+  grid-area: customera;
+  margin-top: 20px;
+  color: lightcoral;
+  padding: 20px;
+  width: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 7;
+  grid-template-rows: 7;
+  grid-template-areas:
+    "language promotion promotion promotion promotion promotion promotion"
+    ". . title title title navIcons searchBar"
+    "navBar navBar navBar navBar navBar navBar navBar"
+    "leftsection  . . . . . rightsection "
+    "leftsection1  . .middle1 . .rightsection1"
+    ". lowersection1 lowersection2 lowersection3 lowersection4 lowersection5 lowersection6"
+    ". hair-a hair-b hair-c hair-d hair-e hair-f"
+    ". button0 button0 button0 button0 button0 button0"
+    ". .customera customera customera . .";
+
+  grid-gap: 0px;
+  padding: 0px;
+}
+
+.grid-container > .item1 {
+  background-color: #fdb6b6;
+  color: #808080;
+  text-align: left;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.grid-container > .item2 {
+  background-color: #fdb6b6;
+  color: #1a1a1a;
+  padding-top: 5px;
+  padding-left: 90px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.grid-container > .item3 {
+  background-color: white;
+  padding: 5px;
+  color: #fdb6b6;
+  font-family: "Garamond";
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.grid-container > .item6 {
+  background-color: white;
+
+  color: #fff5f5;
+}
+.navigationBar {
+  background-color: #fdb6b6;
+  display: flex;
+  flex-flow: row;
+  text-decoration: none;
+  justify-content: space-around;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.navigationBar li a {
+  text-decoration: none;
+  color: grey;
+}
+.navigationBar li {
+  list-style: none;
+}
+.item4 i {
+  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+.item5 input {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.item8 {
+  text-align: right;
+}
+.item9 {
+  text-align: space-around;
+}
+/* 
+
+*{
+    margin: 0;
+}
+.item1 {
+    grid-area: language;
+}
+.item2 {
+    grid-area: promotion;
+}
+.item3 {
+    grid-area: title;
+}
+.item4 {
+    grid-area: navIcons;
+}
+.item5 {
+    grid-area: searchBar;
+}
+.item6 {
+    grid-area: navBar;
+}
+.item7 {
+    grid-area: leftsection;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+  "language promotion promotion promotion promotion promotion promotion"
+  ". . title title title navIcons searchBar"
+  "navBar navBar navBar navBar navBar navBar navBar"
+  "leftsection . . . . . .  ";
+
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-container > .item1 {
+    background-color: #fdb6b6;
+    color: #808080;
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.grid-container > .item2 {
+    background-color: #fdb6b6;
+    color: #1a1a1a;
+    padding-top: 5px;
+    padding-left: 90px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.grid-container > .item3 {
+    background-color: white;
+    padding-top: 15px;
+    color: #fdb6b6;
+    font-family: 'Sofia',sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.grid-container > .item6 {
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #fdb6b6;
+}
+.navigationBar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding-top: 12px;
+    text-decoration: none;
+}
+
+.navigationBar li a {
+    text-decoration: none;
+    color: grey;
+}
+.navigationBar li{
+    list-style: none;
+}
+.item4 i {
+    width: 30px;
+    height: 30px;
+}
+.item4{
+    padding-top: 20px;
+}
+.item5 input{
+    padding-top: 5px;
+}
+.item5{
+    padding-top: 20px;
+} */

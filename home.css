@@ -194,3 +194,22 @@ span {
   flex-flow: row;
   justify-content: space-around;
 }
+
+.asideSection {
+  float: left;
+  width: 525px;
+  height: 700px;
+}
+
+.asideLeft {
+  background-image: url("img/a2.jpg");
+}
+
+.asideMiddle {
+  background-color: rgb(255, 245, 245);
+  width: 50%;
+}
+
+.asideRight {
+  background-image: url("img/a1.jpg");
+}
