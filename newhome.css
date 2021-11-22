@@ -66,6 +66,11 @@
   grid-area: lowersection6;
   margin-top: 15px;
 }
+
+.hair {
+  color: tomato;
+  font-size: 10px;
+}
 .hair-1 {
   grid-area: hair-a;
 }
