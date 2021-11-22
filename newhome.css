@@ -113,8 +113,8 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 7;
-  grid-template-rows: 7;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas:
     "language promotion promotion promotion promotion promotion promotion"
     ". . title title title navIcons searchBar"
