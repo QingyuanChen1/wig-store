@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ShoppingCart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="website">
+    <header>Free Shipping to Canada Over 100</header>
+    <h1>Stacey Wig Store</h1>
+    <ul class="container">
+        <li class="tag"><a href="#">Home</a></li>
+        <li class="tag"><a href="#">Wig Page</a></li>
+        <li class="tag"><a href="#">Styling Service</a></li>
+        <li class="tag">
+            <a class="secondary" id="secondary" onclick="menu()" href="#">Maintenance Service <span class="fas fa-caret-down down" id="fa-caret-down" onclick="maintain()"></span></a>
+            <ul class="subtag" id="subtag">
+                <li><a href="Template.html">Hair Add</a></li>
+                <li><a href="Washing.html">Washing</a></li>
+            </ul>
+        </li>
+        <li class="tag"><a href="#">How to Use</a></li>
+        <li class="tag"><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="navbar"><p>Shopping Cart</p></div>
+</div>
+<div class="container1">
+    <p class="title">Service Request</p>
+    <img src="picture/descriptionpage.jpeg" alt="hair add" class="hairwash" id="hairwash" width="300" height="300">
+    <p class="nothing" id="nothing">Hey there is nothing in your shopping cart!</p>
+    <div class="style" id="style">
+        <p class="smalltitle">Hair Add</p>
+        <p>Quantity: <b></b></p>
+        <p>Location: <b>Front Side</b></p>
+        <button class="edit" onclick="location.href='Template.html'">Edit</button>
+        <button class="edit" onclick="remove1()">Delete</button>
+    </div>
+
+    <img src="picture/conditioner.png" alt="conditioner" class="conditioner" id="conditioner" width="300" height="300">
+    <div class="style1" id="style1">
+        <p class="smalltitle">Hair Care</p>
+        <p>Quantity: <b>1</b></p>
+        <p>Service: <b>Conditioner & Wahsing</b></p>
+        <button class="edit" onclick="location.href='Washing.html'">Edit</button>
+        <button class="edit" onclick="remove2()">Delete</button>
+
+    </div>
+    <div class="contactform">
+        <p class="title1">You are almost there</p>
+        <button class="contact" onclick="location.href='contact.html'">Fill Out Contact Form</button>
+        <button class="member" onclick="location.href='member.html'">Already a Member of Us? Sign In</button>
+        <div class="picture">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://www.google.ca" class="fa fa-google"></a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let boolean = true;
+    let remove_boolean1 = true;
+    let remove_boolean2 = true;
+    function menu() {
+        if(boolean=== true){
+            document.getElementById("subtag").style.display ='block';
+            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(-180deg)';
+            boolean = false;
+        }
+        else{
+            document.getElementById("subtag").style.display ='none';
+            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(0deg)';
+            boolean = true;
+        }
+
+    }
+    function remove1(){
+        remove_boolean1 = false;
+        document.getElementById("style").style.display ='none';
+        document.getElementById("hairwash").style.display ='none';
+        if(remove_boolean2 === true){
+            document.getElementById("style1").style.gridColumn = '2';
+            document.getElementById("style1").style.gridRow = '2';
+            document.getElementById("conditioner").style.gridColumn = '1';
+            document.getElementById("conditioner").style.gridRow = '2';
+        }
+        if(remove_boolean1 === false && remove_boolean2 === false){
+            document.getElementById("nothing").style.display= 'block';
+            // document.getElementById("nothing").innerHTML = "New text!";
+        }
+    }
+    function remove2(){
+        remove_boolean2 = false;
+        document.getElementById("style1").style.display ='none';
+        document.getElementById("conditioner").style.display ='none';
+        if(remove_boolean1 === false && remove_boolean2 === false){
+            document.getElementById("nothing").style.display= 'block';
+        }
+    }
+
+</script>
+</html>

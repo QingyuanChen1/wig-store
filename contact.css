@@ -7,11 +7,13 @@ h1{
     margin: 10px 0 10px 0;
     font-family: 'Sofia',sans-serif;
 }
+
 .website{
     opacity: 1;
 }
+
 header{
-    display:flex;
+    display: flex;
     width: 100%;
     height: 5%;
     background-color: black;
@@ -19,11 +21,10 @@ header{
     align-items: center;
     justify-content: center;
     color: white;
+
 }
 
-
 .container{
-    z-index: 10;
     width: 100%;
     height: 3rem;
     background-color: rgb(255,245,245);
@@ -37,7 +38,6 @@ header{
 }
 
 .tag{
-
     margin-top: 1rem;
     list-style: none;
 }
@@ -49,20 +49,17 @@ header{
     display: none;
     border-radius: 10px;
     margin-top: 15px;
-
+    z-index: 10;
 }
 
 
 
 
-span{
+.fa-caret-down{
     transform: translateY(-5%);
     font-size:15px;
     transition:transform 0.2s;
 }
-/*.container li a:hover span{*/
-/*    transform: translateY(-5%) rotate(-180deg);*/
-/*}*/
 .navbar{
     width:100%;
     height: 10%;
@@ -82,75 +79,45 @@ span{
     padding:25px;
     z-index: -10;
 }
-.description{
-    width: 85%;
-    height: 60%;
-    margin: 30px auto auto auto;
-    display: grid;
-    grid-template-columns: 680px 800px 82px;
-    grid-template-rows: 30px 300px 300px;
-    gap: 5px;
-}
-.description img{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.description h3{
-    font-size: 1.5em;
-    font-weight: bold;
-    grid-column: 2;
-    grid-row: 1;
-}
-.description p{
-    font-size: 1.2em;
-    font-weight: normal;
-    grid-column: 2;
-    grid-row: 2;
-    width: 600px;
-    height: 500px;
-}
-
-.description button{
-    margin-left: 50px;
-    grid-column: 3;
-    grid-row: 1;
-    width: 90px;
-    height: 50px;
-}
-.selection{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
-}
-.selection1{
-    grid-column: 2;
-    grid-row: 3;
-    width: 350px;
-    height: 50px;
-    padding-left: 10px;
-}
-.selection2{
-    grid-column: 2;
-    grid-row: 3;
-    width: 100px;
-    height: 50px;
+.bigtitle{
     text-align: center;
-    margin-left: 370px;
+    font-size: 30px;
+    font-family: 'Sofia',sans-serif;
+    margin-bottom: 30px;
+ }
+.contactinfo{
+    text-align: left;
+    margin: 70px auto auto auto;
+    width: 700px;
+    height: 550px;
+    border: transparent;
+    background-color: #FFCDD2;
+    border-radius: 5px;
+    padding-left: 30px;
 }
-.comment{
-    grid-column: 2;
-    grid-row: 3;
-    margin: 12px 0 0 490px;
-    display:flex;
+.contactinfo label{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.name{
+    width: 90%;
+    height:30px;
+}
+.age{
+    width: 90%;
+    height:30px;
+}
+.contactinfo select{
+    width: 91%;
+    height:41px;
+}
+.submitbutton{
+    width: 90px;
+    height: 30px;
+    margin-left: 41%;
 }
 
-.comment input{
-    flex-direction: row;
-    width: 300px;
-    height:100px;
-    margin-left:10px;
+.detail{
+    width: 650px;
+    height: 200px;
 }
-
-
