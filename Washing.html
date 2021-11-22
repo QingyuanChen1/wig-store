@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="website">
+<div id="website">
     <header>Free Shipping to Canada Over 100</header>
     <h1>Stacey Wig Store</h1>
     <ul class="container">
@@ -32,7 +32,7 @@
         <h3>Hair Add</h3>
         <p>Our expert Toronto wig maker is in once a week to repair caps or fill in older pieces that may have lost hair over time. Clients are required to book their service in advance and will be asked to show up 30-45 min prior to the booking to have their piece washed. Once the hair add is complete, our stylist will finish the piece and make adjustments to blend the new hair.
             <br><br>Stacey Wig Store only services products purchased through our company, as we cannot guarantee the quality of products purchased elsewhere. Thank you for your understanding.</p>
-        <button>Add to Cart</button>
+        <button onclick="cart()">Add to Cart</button>
 
         <select name="hair" id="hair" class="selection1">
             <option value="title">Select Which Part of The Hair You Want to Add</option>
@@ -53,21 +53,35 @@
             <input type="text" id="comment" name="comment"><br><br>
         </form>
     </div>
-    <script>
-        let boolean = true;
-        function menu() {
-            if(boolean=== true){
-                document.getElementById("subtag").style.display ='block';
-                boolean = false;
-            }
-            else{
-                document.getElementById("subtag").style.display ='none';
-                boolean = true;
-            }
-        }
-    </script>
+</div>
+<div class="secondmenu" id="secondmenu">
+    <p>You have successfully added hair treatment into shopping cart</p>
+    <button onclick="location.href='ShoppingCart.html'">Finish</button>
+    <button id="button1" onclick="location.href='ShoppingCart.html'">Continues</button>
 </div>
 </body>
+<script>
+    let boolean = true;
+    let popupmenu = document.getElementById("secondmenu");
+    let website = document.getElementById("website");
+    function menu() {
+        if(boolean=== true){
+            document.getElementById("subtag").style.display ='block';
+            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(-180deg)';
+            boolean = false;
+        }
+        else{
+            document.getElementById("subtag").style.display ='none';
+            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(0deg)';
+            boolean = true;
+        }
+    }
+
+    function cart(){
+        popupmenu.style.display = 'block';
+        website.style.opacity = '0.1';
+    }
+</script>
 </html>
 
 
