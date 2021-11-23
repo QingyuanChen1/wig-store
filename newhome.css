@@ -1,3 +1,36 @@
+.copyright {
+  text-align: center;
+  color: lightcoral;
+}
+.gallery-wrapper {
+  grid-area: wrapper0;
+  background-color: #dbdbdb;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gallery {
+  background-color: #dbdbdb;
+  display: flex;
+  box-sizing: border-box;
+  width: max-content;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.it1 {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 16px 2px;
+}
+
+.it1 img {
+  width: 160px;
+  display: block;
+  border: white 1px solid;
+}
+
 .item1 {
   grid-area: language;
 }
@@ -37,62 +70,35 @@
   margin: 30px;
 }
 
-.item12 {
-  grid-area: lowersection1;
-  margin-top: 15px;
-}
-
-.item13 {
-  grid-area: lowersection2;
-  margin-top: 15px;
-}
-
-.item14 {
-  grid-area: lowersection3;
-  margin-top: 15px;
-}
-
-.item15 {
-  grid-area: lowersection4;
-  margin-top: 15px;
-}
-
-.item16 {
-  grid-area: lowersection5;
-  margin-top: 15px;
-}
-
-.item17 {
-  grid-area: lowersection6;
-  margin-top: 15px;
-}
-
-.hair {
-  color: tomato;
-  font-size: 10px;
-}
-.hair-1 {
-  grid-area: hair-a;
-}
-.hair-2 {
-  grid-area: hair-b;
-}
-.hair-3 {
-  grid-area: hair-c;
-}
-.hair-4 {
-  grid-area: hair-d;
-}
-.hair-5 {
-  grid-area: hair-e;
-}
-.hair-6 {
-  grid-area: hair-f;
-}
-
 .radius3 {
   border-radius: 50%;
 }
+
+.photo-a {
+  grid-area: photo0;
+}
+.photo {
+  border: none;
+  display: inline-block;
+  margin-top: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.hair-a {
+  grid-area: hair0;
+}
+.hair {
+  color: tomato;
+  font-size: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  width: 150px;
+}
+
 .button-a {
   grid-area: button0;
 }
@@ -107,13 +113,19 @@
   display: inline-block;
   margin-top: 10px;
   cursor: pointer;
+  width: 150px;
 }
+
 .Customer-show {
   grid-area: customera;
   margin-top: 20px;
   color: lightcoral;
   padding: 20px;
   width: auto;
+}
+.footer {
+  background-color: black;
+  height: 80px;
 }
 
 .grid-container {
@@ -126,10 +138,11 @@
     "navBar navBar navBar navBar navBar navBar navBar"
     "leftsection  . . . . . rightsection "
     "leftsection1  . .middle1 . .rightsection1"
-    ". lowersection1 lowersection2 lowersection3 lowersection4 lowersection5 lowersection6"
-    ". hair-a hair-b hair-c hair-d hair-e hair-f"
+    ". photo0 photo0 photo0 photo0 photo0 photo0"
+    ". hair0 hair0 hair0 hair0 hair0 hair0"
     ". button0 button0 button0 button0 button0 button0"
-    ". .customera customera customera . .";
+    ". .customera customera customera . ."
+    ". wrapper0 wrapper0 wrapper0 wrapper0 wrapper0 . ";
 
   grid-gap: 0px;
   padding: 0px;
