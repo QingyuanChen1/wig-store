@@ -141,11 +141,13 @@ nav {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  color: #844e60;
+  color: rgb(249, 92, 92);
+  border-color: rgb(254, 92, 92);
 }
 
 /* Add some padding inside the card container */
 .card {
+  color: rgb(64, 64, 64);
   margin: 40px 60px;
   padding: 2px 16px;
   box-shadow: 0 4px 8px 0 rgba(202, 124, 124, 0.2);
