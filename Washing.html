@@ -2,21 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="Template.css">
+    <title>Washing</title>
+    <link rel="stylesheet" href="Washing.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div id="website">
     <header>Free Shipping to Canada Over 100</header>
     <h1>Stacey Wig Store</h1>
     <ul class="container">
+        <li class="burger">
+            <a class="hamburger" id="hamburger" href="#" ><span class="fas fa-bars fa-3x" id="fa-bars" onclick="hiddenbar()"></span></a>
+            <ul class="hiddenbar" id="hiddenbar">
+                <li><span class="fas fa-chevron-circle-left" id="fa-chevron-circle-left" onclick="gobackbutton()"></span></li>
+                <li class="subbar"><a href="#">Home</a></li>
+                <li class="subbar" ><a href="#">Wig Page</a></li>
+                <li class="subbar" ><a href="#">Styling Service</a></li>
+                <li class="subbar" id="subbar">
+                    <a class="bar" id="bar" onclick="menu1()" href="#">Maintenance Service <span class="fas fa-caret-down down" id="fa-caret-down1"></span></a>
+                    <ul class="hiddensecondbar" id="hiddensecondbar">
+                        <li><a href="Template.html">Hair Add</a></li>
+                        <li><a href="Washing.html">Washing</a></li>
+                    </ul>
+                </li>
+                <li class="subbar"><a href="#">How to Use</a></li>
+                <li class="subbar"><a href="#">Contact Us</a></li>
+            </ul>
+        </li>
         <li class="tag"><a href="#">Home</a></li>
         <li class="tag"><a href="#">Wig Page</a></li>
         <li class="tag"><a href="#">Styling Service</a></li>
         <li class="tag">
-            <a class="secondary" id="secondary" onclick="menu()" href="#">Maintenance Service <span class="fas fa-caret-down down"></span></a>
+            <a class="secondary" id="secondary" onclick="menu()" href="#">Maintenance Service <span class="fas fa-caret-down down" id="fa-caret-down"></span></a>
             <ul class="subtag" id="subtag">
                 <li><a href="Template.html">Hair Add</a></li>
                 <li><a href="Washing.html">Washing</a></li>
@@ -28,7 +47,7 @@
     </ul>
     <div class="navbar"><p>Maintainence Service</p></div>
     <div class="description">
-        <img src="picture/conditioner.png" alt="des" width="650" height="450">
+        <img src="picture/conditioner.png" alt="des" class="conditioner" id="conditioner">
         <h3>Hair Add</h3>
         <p>Our expert Toronto wig maker is in once a week to repair caps or fill in older pieces that may have lost hair over time. Clients are required to book their service in advance and will be asked to show up 30-45 min prior to the booking to have their piece washed. Once the hair add is complete, our stylist will finish the piece and make adjustments to blend the new hair.
             <br><br>Stacey Wig Store only services products purchased through our company, as we cannot guarantee the quality of products purchased elsewhere. Thank you for your understanding.</p>
@@ -59,29 +78,8 @@
     <button onclick="location.href='ShoppingCart.html'">Finish</button>
     <button id="button1" onclick="location.href='ShoppingCart.html'">Continues</button>
 </div>
+<script src="Washing.js"></script>
 </body>
-<script>
-    let boolean = true;
-    let popupmenu = document.getElementById("secondmenu");
-    let website = document.getElementById("website");
-    function menu() {
-        if(boolean=== true){
-            document.getElementById("subtag").style.display ='block';
-            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(-180deg)';
-            boolean = false;
-        }
-        else{
-            document.getElementById("subtag").style.display ='none';
-            document.getElementById("fa-caret-down").style.transform = 'translateY(-5%) rotate(0deg)';
-            boolean = true;
-        }
-    }
-
-    function cart(){
-        popupmenu.style.display = 'block';
-        website.style.opacity = '0.1';
-    }
-</script>
 </html>
 
 
