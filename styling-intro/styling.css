@@ -128,7 +128,8 @@ nav {
   padding: 0 0.5em;
 }
 .bio {
-  font: 1.3em 'Times New Roman', 'Times', serif;
+  color: rgb(68, 68, 68);
+  font: italic 1.3em 'Times New Roman', 'Times', serif;
   margin: 20px 0 5px 60px;
   max-width: 30%;
 }
