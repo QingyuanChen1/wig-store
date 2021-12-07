@@ -82,6 +82,7 @@ nav {
 .path {
   display: flex;
   position: relative;
+  text-decoration: none;
 }
 .path a::after {
   display: inline-block;
@@ -232,5 +233,5 @@ ul {
   z-index: 1;
 }
 .label{
-  display: inline-block;
+  display: flex;
 }
