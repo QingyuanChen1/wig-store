@@ -17,6 +17,7 @@
   padding: 0px 8px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .it1 {
@@ -80,6 +81,8 @@
 
 .top123 {
   grid-area: top0;
+  text-align: center;
+  justify-content: center;
 }
 
 .top {
@@ -108,6 +111,7 @@
 .hair-a {
   grid-area: hair0;
 }
+
 .hair {
   color: tomato;
   font-size: 10px;
@@ -143,6 +147,7 @@
   padding: 20px;
   width: auto;
 }
+
 .footer {
   background-color: black;
   height: 80px;

@@ -15,11 +15,15 @@ h1 {
 }
 
 .descrption {
+  background-color: lightpink;
+  text-align: center;
   margin-left: 35px;
-  color: lightcoral;
+  color: white;
   font-size: 30px;
 }
-
+.thumbs2 {
+  text-align: center;
+}
 header {
   display: flex;
   width: 100%;
