@@ -129,7 +129,7 @@ nav {
 }
 .bio {
   color: rgb(68, 68, 68);
-  font: italic 1.3em 'Times New Roman', 'Times', serif;
+  font: italic 1.3em "Times New Roman", "Times", serif;
   margin: 20px 0 5px 60px;
   max-width: 30%;
 }
@@ -174,7 +174,7 @@ ul {
   color: rgb(255, 255, 255);
 }
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -187,33 +187,36 @@ ul {
   display: inline-block;
 }
 
-/* 下拉内容（默认隐藏） */
+/* dropdown content - hide by defualt */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-/* 下拉链接 */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-/* 悬停时更改下拉链接的颜色 */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* 悬停时显示下拉菜单 */
+.dropdown-content a:hover {
+  background-color: #eeafaf;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* 显示下拉内容时，更改下拉按钮的背景颜色 */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.float-button {
+  position: absolute;
+  height: 90px;
+  width: 40px;
+  bottom: 0;
+  right: 0;
+  background: pink;
+}
+.intro {
+  position: relative;
 }
