@@ -143,6 +143,7 @@ nav {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   color: rgb(249, 92, 92);
   border-color: rgb(254, 92, 92);
+  border: 2px solid;
 }
 
 /* Add some padding inside the card container */
@@ -150,8 +151,8 @@ nav {
   color: rgb(64, 64, 64);
   margin: 40px 60px;
   padding: 2px 16px;
-  box-shadow: 0 4px 8px 0 rgba(202, 124, 124, 0.2);
-  border: 2px solid #844e60;
+  border: 2px solid #f3eff0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   transition: 0.3s;
   display: flex;
@@ -215,6 +216,7 @@ ul {
   bottom: 0;
   right: 0;
   background: pink;
+  border: white 2px solid ;
 }
 .intro {
   position: relative;
@@ -227,4 +229,8 @@ ul {
 }
 .popup{
   display: none;
+  z-index: 1;
+}
+.label{
+  display: inline-block;
 }
