@@ -210,13 +210,21 @@ ul {
 }
 
 .float-button {
+  display: flex;
   position: absolute;
-  height: 90px;
-  width: 40px;
   bottom: 0;
   right: 0;
   background: pink;
 }
 .intro {
   position: relative;
+}
+.form-title{
+  color:#fff;
+  font: 0.3px "arial" sans;
+  padding: 2px 5px;
+  margin: auto;
+}
+.popup{
+  display: none;
 }
