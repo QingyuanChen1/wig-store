@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Washing.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/a07d6bc296.js" crossorigin="anonymous"></script>
-    <script src="Washing.js"></script>
+
 </head>
 <body>
 <div id="website">
@@ -14,8 +14,9 @@
     <h1>Stacey Wig Store</h1>
     <ul class="container">
         <li class="burger">
-            <a class="hamburger" id="hamburger" href="#" onclick="hiddenbar()"><span class="fas fa-bars fa-3x"></span></a>
+            <a class="hamburger" id="hamburger" href="#" ><span class="fas fa-bars fa-3x" id="fa-bars" onclick="hiddenbar()"></span></a>
             <ul class="hiddenbar" id="hiddenbar">
+                <li><span class="fas fa-chevron-circle-left" id="fa-chevron-circle-left" onclick="gobackbutton()"></span></li>
                 <li class="subbar"><a href="#">Home</a></li>
                 <li class="subbar" ><a href="#">Wig Page</a></li>
                 <li class="subbar" ><a href="#">Styling Service</a></li>
@@ -77,6 +78,7 @@
     <button onclick="location.href='ShoppingCart.html'">Finish</button>
     <button id="button1" onclick="location.href='ShoppingCart.html'">Continues</button>
 </div>
+<script src="Washing.js"></script>
 </body>
 </html>
 
