@@ -1,3 +1,15 @@
+.button1 {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .copyright {
   text-align: center;
   color: lightcoral;
@@ -17,7 +29,6 @@
   padding: 0px 8px;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .it1 {
@@ -57,44 +68,20 @@
   grid-area: rightsection;
 }
 
-.item9 {
-  grid-area: middlepart;
-  text-align: center;
-}
-
-.item9 h1 {
-  color: lightcoral;
-}
-
-.button-banner {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-  cursor: pointer;
-  width: 150px;
-}
-
 .top123 {
   grid-area: top0;
-  text-align: center;
-  justify-content: center;
 }
-
+.line {
+  grid-area: line0;
+  width: auto;
+  border-bottom: 1px solid black;
+}
 .top {
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px;
-  width: 250px;
-}
-
-.radius3 {
-  border-radius: 50%;
+  margin-top: 5px;
+  width: 100px;
 }
 
 .photo-a {
@@ -111,7 +98,6 @@
 .hair-a {
   grid-area: hair0;
 }
-
 .hair {
   color: tomato;
   font-size: 10px;
@@ -147,7 +133,6 @@
   padding: 20px;
   width: auto;
 }
-
 .footer {
   background-color: black;
   height: 80px;
@@ -161,9 +146,9 @@
     "language promotion promotion promotion promotion promotion promotion"
     ". . title title title navIcons searchBar"
     "navBar navBar navBar navBar navBar navBar navBar"
-    "leftsection  middlepart middlepart middlepart middlepart middlepart rightsection "
-    " . .top0 top0 top0. . "
-    ". photo0 photo0 photo0 photo0 photo0 photo0"
+    "leftsection  . . . . . rightsection "
+    " top0 top0 top0 top0 . . . "
+    "line0 line0 line0 line0 line0 line0 line0 "
     ". hair0 hair0 hair0 hair0 hair0 hair0"
     ". button0 button0 button0 button0 button0 button0"
     ". .customera customera customera . ."

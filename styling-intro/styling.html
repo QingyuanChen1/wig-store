@@ -15,12 +15,17 @@
         <ul class="container">
             <li class="tag"><a href="/">Home</a></li>
             <li class="tag"><a href="/">Wig Page</a></li>
-            <li class="tag"><a href="/">Styling Service</a></li>
+            <li class="tag dropdown"><a href="/styling-intro/styling.html">Styling Service</a> 
+                <div class="dropdown-content">
+                <a href="/styling-intro/styling.html">Intro</a>
+                <a href="/styling-booking/booking.html">Order</a>
+                </div>
+            </li>
             <li class="tag"><a href="/">Maintenance Service</a></li>
             <li class="tag"><a href="/">How to Use</a></li>
             <li class="tag"><a href="/">Contact Us</a></li>
         </ul>
-        <div class="navbar"><h2>Styling Service</h2></div>
+        <div class="navbar"><p>Styling Service</p></div>
         <nav class="path">
             <ol>
                 <li class="path"><a href="#">Home</a></li>
@@ -33,6 +38,63 @@
             </div>
         </nav>
         <div class="intro">
+            <div class="float-button">
+                <a href="#" class="form-title">Contact Form</a>
+                <div class="popup">
+                        <form class = "contact-form-detail"> <a href="#">
+                            <div class = "group1">
+                                <label class = "label">Name</label> <input class = "input" type = "text" style = "width:90%" required>
+                            </div>
+                            
+                            <div class = "group2">
+                                <label class = "label">Email</label>    <input class = "input" type = "text" style = "width:90%" required>
+                            </div>
+                            
+                            <div class = "group3">
+                             <label class = "label">Comments</label>  <textarea class = "input" style = "width:90%" required></textarea>
+                              
+                            </div>
+                            <div class = "row">
+                               <div class = "half">
+                                  <label class = "checkbox">
+                                     <input type = "checkbox" checked = "checked">
+                                     <div class = "checkmark"></div> I'm first time here.
+                                  </label>
+                                  <br>
+                                  <label class = "checkbox">
+                                     <input type = "checkbox">
+                                     <div class = "checkmark"></div> I've been here before.
+                                  </label>
+                                  <br>
+                                  <label class = "checkbox">
+                                     <input type = "checkbox" disabled>
+                                     <div class = "checkmark"></div> Prefer not to say.
+                                  </label>
+                                  <br>
+                                  <br>
+                               </div>
+                               
+                               <div class = "half">
+                                  <label class = "checkbox">
+                                     <input type = "radio" name = "gender" value = "male" checked>
+                                     <div class = "checkmark"></div> Male
+                                  </label>
+                                  <br>
+                                  <label class = "checkbox">
+                                     <input type = "radio" name = "gender" value = "female">
+                                     <div class = "checkmark"></div> Female
+                                  </label>
+                                  <br>
+                                  <label class = "checkbox">
+                                     <input type = "radio" name = "gender" value = "female" disabled>
+                                     <div class = "w3-checkmark"></div> Don't know (Disabled)
+                                  </label>
+                               </div>
+                               <button>Submit</button>
+                            </div>
+                        </a> </form>
+                </div>
+            </div>
             <article class="bio">
             <h2>
                 OUR MISSION
@@ -66,7 +128,7 @@
             </div>
             </div>
         </div>
-        <footer class="bottom">Copyright @2021</footer>
+        <footer class="bottom">Copyright @2021 STACEY WIG STORE</footer>
     </div>
 </body>
 </html>

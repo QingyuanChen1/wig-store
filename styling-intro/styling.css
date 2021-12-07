@@ -4,12 +4,12 @@ body {
   /* background-image: url("../picture/andrea-donato-lJFLGirYwV0-unsplash.jpg"); */
   object-fit: fill;
 }
-.website{
+.website {
   font: 1em system-ui;
-  height:auto;
-	min-height: 100vh;
-	display:flex;
-	flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   text-align: center;
@@ -52,7 +52,7 @@ header {
   justify-content: space-around;
   align-self: space-around;
   vertical-align: middle;
-  color: rgb(255, 85, 85);
+  color: rgb(244, 145, 145);
   font-family: sofia, sans-serif;
   font-weight: bolder;
   font-size: 2rem;
@@ -82,6 +82,7 @@ nav {
 .path {
   display: flex;
   position: relative;
+  text-decoration: none;
 }
 .path a::after {
   display: inline-block;
@@ -92,7 +93,7 @@ nav {
   padding: 0 3px;
 }
 .combo {
-  display:flex;
+  display: flex;
   position: absolute;
   right: 0;
   top: 12px;
@@ -128,30 +129,36 @@ nav {
   padding: 0 0.5em;
 }
 .bio {
-  margin: 20px 0 5px 60px; 
+  color: rgb(68, 68, 68);
+  font: italic 1.3em "Times New Roman", "Times", serif;
+  margin: 20px 0 5px 60px;
   max-width: 30%;
 }
-.intro{
+.intro {
   display: flex;
-  flex-direction: column;
   flex: 1;
   background-image: url(../picture/andrea-donato-lJFLGirYwV0-unsplash.jpg);
   object-fit: cover;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(249, 92, 92);
+  border-color: rgb(254, 92, 92);
+  border: 2px solid;
 }
 
 /* Add some padding inside the card container */
 .card {
-  margin: 15px 60px;
+  color: rgb(64, 64, 64);
+  margin: 40px 60px;
   padding: 2px 16px;
-  box-shadow: 0 4px 8px 0 rgba(202, 124, 124, 0.2);
-  border: 2px solid rgb(243, 243, 243);
+  border: 2px solid #f3eff0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 ul {
   list-style-type: none;
@@ -159,10 +166,72 @@ ul {
 }
 .menu {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 .bottom {
+  display: flex;
+  justify-content: space-around;
   padding: 1em;
   background-color: rgb(244, 145, 145);
   color: rgb(255, 255, 255);
+}
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown content - hide by defualt */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #eeafaf;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.float-button {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: pink;
+  border: white 2px solid ;
+}
+.intro {
+  position: relative;
+}
+.form-title{
+  color:#fff;
+  font: 0.3px "arial" sans;
+  padding: 2px 5px;
+  margin: auto;
+}
+.popup{
+  display: none;
+  z-index: 1;
+}
+.label{
+  display: flex;
 }
