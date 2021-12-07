@@ -4,12 +4,12 @@ body {
   /* background-image: url("../picture/andrea-donato-lJFLGirYwV0-unsplash.jpg"); */
   object-fit: fill;
 }
-.website{
+.website {
   font: 1em system-ui;
-  height:auto;
-	min-height: 100vh;
-	display:flex;
-	flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   text-align: center;
@@ -52,7 +52,7 @@ header {
   justify-content: space-around;
   align-self: space-around;
   vertical-align: middle;
-  color: rgb(255, 85, 85);
+  color: rgb(244, 145, 145);
   font-family: sofia, sans-serif;
   font-weight: bolder;
   font-size: 2rem;
@@ -92,7 +92,7 @@ nav {
   padding: 0 3px;
 }
 .combo {
-  display:flex;
+  display: flex;
   position: absolute;
   right: 0;
   top: 12px;
@@ -128,30 +128,32 @@ nav {
   padding: 0 0.5em;
 }
 .bio {
-  margin: 20px 0 5px 60px; 
+  font: 1.3em 'Times New Roman', 'Times', serif;
+  margin: 20px 0 5px 60px;
   max-width: 30%;
 }
-.intro{
+.intro {
   display: flex;
-  flex-direction: column;
   flex: 1;
   background-image: url(../picture/andrea-donato-lJFLGirYwV0-unsplash.jpg);
   object-fit: cover;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #844e60;
 }
 
 /* Add some padding inside the card container */
 .card {
-  margin: 15px 60px;
+  margin: 40px 60px;
   padding: 2px 16px;
   box-shadow: 0 4px 8px 0 rgba(202, 124, 124, 0.2);
-  border: 2px solid rgb(243, 243, 243);
+  border: 2px solid #844e60;
   border-radius: 30px;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 ul {
   list-style-type: none;
@@ -159,9 +161,11 @@ ul {
 }
 .menu {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 .bottom {
+  display: flex;
+  justify-content: space-around;
   padding: 1em;
   background-color: rgb(244, 145, 145);
   color: rgb(255, 255, 255);
