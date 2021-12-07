@@ -6,6 +6,7 @@ h1{
     color:rgb(244,145,145);
     margin: 10px 0 10px 0;
     font-family: 'Sofia',sans-serif;
+    visibility: visible;
 }
 
 .website{
@@ -13,9 +14,9 @@ h1{
 }
 
 header{
-    display: flex;
+    display:flex;
     width: 100%;
-    height: 5%;
+    height: 3%;
     background-color: black;
     text-align: center;
     align-items: center;
@@ -50,9 +51,60 @@ header{
     margin-top: 15px;
     z-index: 10;
 }
+.hamburger{
+    color: black;
+    display: block;
+    position: absolute;
+    left: 33px;
+    top: 40px;
 
+}
+.burger{
+    list-style: none;
+}
 
+.hiddenbar{
+    position: absolute;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255,245,245);
+    border-radius: 10px;
+    margin-top: -67px;
+    margin-left: -9px;
+    visibility: hidden;
+    z-index: 10;
+}
 
+.hiddenbar li{
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.hiddenbar li:nth-child(7){
+    padding-bottom: 50px;
+}
+.subbar{
+    padding-top: 5px;
+    list-style: none;
+}
+.subbar a{
+    color: grey;
+    text-decoration: none;
+}
+
+.hiddensecondbar{
+    display: none;
+    padding: 5px
+}
+.hiddensecondbar li{
+    list-style: none;
+    padding-top: 15px;
+}
+.hiddensecondbar li a{
+    color: grey;
+    text-decoration: none;
+}
 
 .fa-caret-down{
     transform: translateY(-5%);
@@ -98,10 +150,10 @@ header{
     grid-column: 2;
 }
 .hairwash{
-    display: block;
     grid-column: 1;
     grid-row: 2;
-
+    width:300px;
+    height:300px;
 }
 
 .style1{
@@ -114,6 +166,8 @@ header{
     display: block;
     grid-column: 1;
     grid-row: 3;
+    width: 300px;
+    height: 300px;
 
 }
 .edit{
@@ -202,4 +256,61 @@ header{
 .fa-google{
     text-decoration: none;
     color: black;
+}
+@media only screen and (max-width: 800px) {
+    .container .tag a{
+        display: none;
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: 380px;
+        grid-template-rows: 50px  250px 180px 250px 200px 500px;
+    }
+    h1{
+        visibility: hidden;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hairwash{
+        grid-column: 1;
+        grid-row: 2;
+        width: 250px;
+        height: 250px;
+        margin-left: 65px;
+    }
+    .title{
+        text-align: center;
+    }
+    .style{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+    }
+    .edit{
+        grid-column: 1;
+        grid-row: 4;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .conditioner{
+        grid-column: 1;
+        grid-row: 4;
+        width: 250px;
+        height: 250px;
+        margin-left: 65px;
+    }
+    .style1{
+        grid-column: 1;
+        grid-row: 5;
+        text-align:center;
+    }
+    .contactform{
+        grid-column: 1;
+        grid-row:6;
+        margin-top:20px;
+        margin-left:75px;
+        text-align: center;
+    }
+
 }

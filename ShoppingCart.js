@@ -54,6 +54,25 @@ function gobackbutton(){
         boolean2 = false;
     }
 }
-
-
-
+function remove1(){
+    remove_boolean1 = false;
+    document.getElementById("style").style.display ='none';
+    document.getElementById("hairwash").style.display ='none';
+    if(remove_boolean2 === true){
+        document.getElementById("style1").style.gridColumn = '2';
+        document.getElementById("style1").style.gridRow = '2';
+        document.getElementById("conditioner").style.gridColumn = '1';
+        document.getElementById("conditioner").style.gridRow = '2';
+    }
+    if(remove_boolean1 === false && remove_boolean2 === false){
+        document.getElementById("nothing").style.display= 'block';
+    }
+}
+function remove2(){
+    remove_boolean2 = false;
+    document.getElementById("style1").style.display ='none';
+    document.getElementById("conditioner").style.display ='none';
+    if(remove_boolean1 === false && remove_boolean2 === false){
+        document.getElementById("nothing").style.display= 'block';
+    }
+}

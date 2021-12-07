@@ -2,7 +2,6 @@ let boolean = true;
 let boolean1 = true;
 let boolean2 = true;
 let booleanhiddenbar = true;
-let popupmenu = document.getElementById("secondmenu");
 let website = document.getElementById("website");
 let hidden = document.getElementById("fa-chevron-circle-left");
 
@@ -32,10 +31,7 @@ function menu1(){
         boolean1 = true;
     }
 }
-function cart(){
-    popupmenu.style.display = 'block';
-    website.style.opacity = '0.1';
-}
+
 function hiddenbar(){
     if(booleanhiddenbar === true){
         document.getElementById("hiddenbar").style.visibility = 'visible';
