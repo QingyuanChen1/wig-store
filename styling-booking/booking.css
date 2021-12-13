@@ -85,75 +85,6 @@ body {
   .card{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #eeced9, #f19eb3);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .Cart-Container{
-    width: 70%;
-    height: 85%;
-    background-color: #f792a6;
-    border-radius: 20px;
-    box-shadow: 0px 25px 40px #f371b233;
-   }
-   .orderheader{
-    margin: auto;
-    width: 90%;
-    height: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   }
-   .orderheading{
-    font-size: 20px;
-    font-family: ‘Open Sans’;
-    font-weight: 700;
-    color: #2F3841;
-   }
-   .action{
-    font-size: 14px;
-    font-family: ‘Open Sans’;
-    font-weight: 600;
-    color: #e44c77;
-    cursor: pointer;
-    border-bottom: 1px solid #e38080;
-   }
-   .Cart-Items{
-    margin: auto;
-    width: 90%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-   .image-box{
-    width: 15%;
-    text-align: center;
-   }
-   .about{
-    height: 100%;
-   }
-   .title{
-    padding-top: 5px;
-    line-height: 10px;
-    font-size: 32px;
-    font-family: ‘Open Sans’;
-    font-weight: 800;
-    color: #202020;
-   }
-   .subtitle{
-    line-height: 10px;
-    font-size: 18px;
-    font-family: ‘Open Sans’;
-    font-weight: 600;
-    color: #909090;
-   }
-   .subbody{
-    margin: 0;
-    padding: 0;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
     height: 100vh;
     display: flex;
@@ -324,7 +255,7 @@ body {
     width: 100%;
     height: 40px;
     border: none;
-    background: linear-gradient(to bottom right, #ffb8d0, #e98aa9);
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
