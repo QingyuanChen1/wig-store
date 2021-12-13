@@ -25,173 +25,74 @@
             <ol>
                 <li class="path"><a href="#">Home</a></li>
                 <li class="path"><a href="#">Styling</a></li>
-                <li class="path">booking</li>
+                <li class="path">Intro</li>
             </ol>
+            <div class="combo">
+                <input type="text" name="search" placeholder="Search here..." autocomplete="off" class="combo-txt">
+                <button type="button" class="combo-btn">Go</button>
+            </div>
         </nav>
     </div>
-		  
-          <div class="search">
-          
-            <div class="warp">
-                  
-                  
-                  <img src="img/logo.jpg" />
-                  
-                  
-                  <div class="search_div">
-                       
-                        <input type="text" class="search_text" />
-                      
-                        <input type="button" value="搜索"  class="search_but"/>
-                      
-                  </div>
-                
-                
-            </div>
-          
+    <div class="subbody">
+    <div class="CartContainer">
+        <div class="Header">
+            <h3 class="Heading">Shopping Cart</h3>
+            <h5 class="Action">Remove all</h5>
+        </div>
+
+        <div class="Cart-Items">
+              <div class="image-box">
+                  <img src="https://images.unsplash.com/photo-1519421692594-d7a3f3e3fe5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" style={{ height="120px" }} />
+              </div>
+              <div class="about">
+                  <p class="title">Colour wig</p>
+                  <h3 class="subtitle">blue</h3>
+                  <img src="../img/veg.png" style={{ height="30px" }}/>
+              </div>
+              <div class="counter">
+                  <div class="btn">+</div>
+                  <div class="count">2</div>
+                  <div class="btn">-</div>
+              </div>
+              <div class="prices">
+                  <div class="amount">$2.99</div>
+                  <div class="save"><u>Save for later</u></div>
+                  <div class="remove"><u>Remove</u></div>
+              </div>
+        </div>
+
+        <div class="Cart-Items pad">
+              <div class="image-box">
+                  <img src="https://images.unsplash.com/photo-1488282396544-0212eea56a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" style={{ height="120px" }} />
+              </div>
+              <div class="about">
+                  <p class="title">Colour wig</p>
+                  <h3 class="subtitle">blonde</h3>
+                  <img src="../img/veg.png" style={{ height="30px" }}/>             
+                 </div>
+              <div class="counter">
+                  <div class="btn">+</div>
+                  <div class="count">1</div>
+                  <div class="btn">-</div>
+              </div>
+              <div class="prices">
+                  <div class="amount">$3.19</div>
+                  <div class="save"><u>Save for later</u></div>
+                  <div class="remove"><u>Remove</u></div>
+              </div>
+        </div>
+      <hr> 
+      <div class="checkout">
+      <div class="total">
+          <div>
+              <div class="Subtotal">Sub-Total</div>
+              <div class="items">2 items</div>
+          </div>
+          <div class="total-amount">$6.18</div>
       </div>
-      <div class="title warp">
-          
-            <h3>All Items</h3>
-             
-            <div>
-                 
-                 <span>User Address</span>
-                
-                <select>
-                    <option>Toronto</option>
-                    
-                    <option>North York</option>
-                    
-                    <option>Scarbrough</option>
-                    
-                    <option>Missisauga</option>
-                    
-                    <option>Durham</option>
-                    
-                    
-                </select>
-                
-            </div>
-          
-      </div>
-    
-    <!--标题结束-->
-    
-    <!--显示菜单的开始-->
-      <div class="tips warp">
-          
-           <ul>
-               <li>
-                   <input type="checkbox" name="fav" id="all" onclick="checkTest1(this),checkTest2()"/>
-                   Select All
-               </li>
-               <li>Name</li>
-               <li>Price</li>
-               <li>Quantity</li>
-               <li>Total</li>
-               <li>Manage</li>
-           </ul>
-          
-          
-      </div>
-    <!--显示菜单的结束-->
-    
-    <!--商品详情展示开始-->
-      <div class="info warp">
-          
-            <ul>
-                <li class="info_1"><input type="checkbox"   name="fav" onclick="checkTest2()"/> </li>
-                <li class="info_2"> <img src="img/img1.jpg" width="80px"/> </li>
-                <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-                <li class="info_4"><a>颜色：灰色+粉红</a> </li>
-                <li class="info_5">182.5</li>
-                <li class="info_6">
-                    <button onclick="checkTest3(this,1),checkTest2()">-</button>
-                    <input type="text" name="" id="" value="1" />
-                    <button class="bot" onclick="checkTest3(this,2),checkTest2()">+</button>
-                    
-                </li>
-                <li class="info_7">￥182.5</li>
-                <li>
-                    <a href="javascript:viod(0)" onclick="checkTest4(this),checkTest2()">删除</a><br />
-                    <a>已到我的关注</a>
-                </li>
-            </ul>
-      </div>
-    
-     <div class="info warp">
-          
-            <ul>
-                <li class="info_1"><input type="checkbox" name="fav" onclick="checkTest2()"/> </li>
-                <li class="info_2"> <img src="img/img1.jpg" width="80px"/> </li>
-                <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-                <li class="info_4"><a>颜色：灰色+粉红</a> </li>
-                <li class="info_5">182.5</li>
-                <li class="info_6">
-                    <button onclick="checkTest3(this,1),checkTest2()">-</button>
-                    <input type="text" name="" id="" value="1" />
-                    <button class="bot" onclick="checkTest3(this,2),checkTest2()">+</button>
-                    
-                </li>
-                <li class="info_7">￥182.5</li>
-                <li>
-                    <a href="javascript:viod(0)" onclick="checkTest4(this),checkTest2()">删除</a><br />
-                    <a>已到我的关注</a>
-                </li>
-            </ul>
-          
-          
-      </div>
-      
-       <div class="info warp">
-          
-            <ul>
-                <li class="info_1"><input type="checkbox" name="fav"  onclick="checkTest2()"/> </li>
-                <li class="info_2"> <img src="img/img1.jpg" width="80px"/> </li>
-                <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-                <li class="info_4"><a>颜色：灰色+粉红</a> </li>
-                <li class="info_5">182.5</li>
-                <li class="info_6">
-                    <button onclick="checkTest3(this,1),checkTest2()">-</button>
-                    <input type="text" name="" id="" value="1" />
-                    <button class="bot" onclick="checkTest3(this,2),checkTest2()">+</button>
-                    
-                </li>
-                <li class="info_7">￥182.5</li>
-                <li>
-                    <a href="javascript:viod(0)" onclick="checkTest4(this),checkTest2()">删除</a><br />
-                    <a>已到我的关注</a>
-                </li>
-            </ul>
-          
-          
-      </div>
-    <!--商品详情展示结束-->
-    
-    <!--结算开始-->
-    
-   <div class="balance warp">
-       
-          <ul class="balance_ul1">
-              <li>
-                  
-                  <input type="checkbox" name="fav" id="" value=""  onclick="checkTest1(this),checkTest2()"/>
-                  全选
-              </li>
-              <li><a>删除选中商品</a></li>
-              <li><a>移到我的关注</a></li>
-              <li><a>清除下柜商品</a></li>
-          </ul>
-          
-          <ul class="balance_ul2">
-              
-               <li>已经选择<span id="snum">0</span>件商品</li>
-               <li>总价 <span id="zongz">￥0</span></li>
-               <li>
-                   <button class="butt">去结算</button>
-                   
-               </li>
-    </div>
-</body>
-</html>
+      <button class="button">Checkout</button></div>
+ </div>
+</div>
+<footer class="bottom">Copyright @2021 STACEY WIG STORE</footer>
+ </body>
+ 
