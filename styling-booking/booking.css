@@ -82,10 +82,38 @@ body {
     font-weight: bold;
     padding: 0 3px;
   }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* dropdown content - hide by defualt */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #eeafaf;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
   .card{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    background: linear-gradient(to bottom right, #ffe3ed, #FAFCFF);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -111,18 +139,18 @@ body {
   
   .Heading{
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #2F3841;
   }
   
   .Action{
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
-    border-bottom: 1px solid #E44C4C;
+    text-decoration: none;
   }
   
   .Cart-Items{
@@ -134,6 +162,7 @@ body {
     align-items: center;
   }
   .image-box{
+    object-fit: cover;
     width: 15%;
     text-align: center;
   }
@@ -144,15 +173,15 @@ body {
   .title{
     padding-top: 10px;
     line-height: 10px;
-    font-size: 32px;
-    font-family: 'Open Sans';
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     color: #202020;
   }
   .subtitle{
     line-height: 10px;
     font-size: 18px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #909090;
   }
@@ -172,14 +201,14 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: #202020;
     cursor: pointer;
   }
   .count{
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #202020;
   }
@@ -191,14 +220,14 @@ body {
   .amount{
     padding-top: 20px;
     font-size: 26px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     color: #202020;
   }
   .save{
     padding-top: 5px;
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #1687d9;
     cursor: pointer;
@@ -206,7 +235,7 @@ body {
   .remove{
     padding-top: 5px;
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
@@ -262,4 +291,104 @@ body {
     font-family: 'Open Sans';
     font-weight: 600;
     color: #202020;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: space-around;
+    vertical-align: middle;
+    color: rgb(244, 145, 145);
+    font-family: sofia, sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    width: 100%;
+    height: 3rem;
+    object-fit: cover;
+    background-image: url("../picture/photo-1595475884562-073c30d45670.jpg");
+    background-size: 1920px;
+    background-position: -1px -759px;
+    background-repeat: no-repeat;
+    padding-bottom: 2em;
+  }
+  nav {
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 199, 199);
+    width: 100%;
+    padding: 0;
+  }
+  .path ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1em 1em;
+    position: relative;
+  }
+  .path {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+  }
+  .path a::after {
+    display: inline-block;
+    color: #000;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+  }
+  .combo {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 12px;
+  }
+  .combo-txt {
+    background-color: #fff;
+    color: #000;
+    font: inherit;
+    line-height: 1;
+    padding: 0 0.25em 0 1.5em;
+    border: 0.125em solid #000;
+    border-right: none;
+    border-radius: 0.875em 0 0 0.875em;
+    background-image: url("http://simpleicon.com/wp-content/uploads/active-search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    flex-grow: 1;
+  }
+  .combo-txt:focus,
+  .combo-txt:focus ~ * {
+    outline: none;
+    box-shadow: 0.125em 0.125em 0 #000;
+  }
+  .combo-btn {
+    background-color: #ff226c;
+    color: #000;
+    font: inherit;
+    line-height: 1.5;
+    padding: 0;
+    border: 0.125em solid #000;
+    border-radius: 0 0.875em 0.875em 0;
+    padding: 0 0.5em;
+  }
+  u{
+    text-decoration: none;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(244, 145, 145);
+    color: rgb(255, 255, 255);
+  }
+  .website {
+    font: 1em system-ui;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }

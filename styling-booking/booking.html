@@ -15,7 +15,12 @@
         <ul class="container">
             <li class="tag"><a href="/">Home</a></li>
             <li class="tag"><a href="/">Wig Page</a></li>
-            <li class="tag"><a href="/">Styling Service</a></li>
+            <li class="tag dropdown"><a href="/styling-intro/styling.html">Styling Service</a> 
+                <div class="dropdown-content">
+                <a href="/styling-intro/styling.html">Intro</a>
+                <a href="/styling-booking/booking.html">Order</a>
+                </div>
+            </li>
             <li class="tag"><a href="/">Maintenance Service</a></li>
             <li class="tag"><a href="/">How to Use</a></li>
             <li class="tag"><a href="/">Contact Us</a></li>
@@ -25,18 +30,17 @@
             <ol>
                 <li class="path"><a href="#">Home</a></li>
                 <li class="path"><a href="#">Styling</a></li>
-                <li class="path">Intro</li>
+                <li class="path">Order</li>
             </ol>
             <div class="combo">
                 <input type="text" name="search" placeholder="Search here..." autocomplete="off" class="combo-txt">
                 <button type="button" class="combo-btn">Go</button>
             </div>
         </nav>
-    </div>
     <div class="card">
     <div class="CartContainer">
         <div class="Header">
-            <h3 class="Heading">Shopping Cart</h3>
+            <h3 class="Heading">Book your wig service today</h3>
             <h5 class="Action">Remove all</h5>
         </div>
 
@@ -45,8 +49,8 @@
                   <img src="https://images.unsplash.com/photo-1519421692594-d7a3f3e3fe5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" style={{ height="120px" }} />
               </div>
               <div class="about">
-                  <p class="title">Colour wig</p>
-                  <h3 class="subtitle">blue</h3>
+                  <p class="title">Trim wig</p>
+                  <h3 class="subtitle">Regular</h3>
                   <img src="../img/veg.png" style={{ height="30px" }}/>
               </div>
               <div class="counter">
@@ -55,7 +59,7 @@
                   <div class="btn">-</div>
               </div>
               <div class="prices">
-                  <div class="amount">$2.99</div>
+                  <div class="amount">$29.9</div>
                   <div class="save"><u>Save for later</u></div>
                   <div class="remove"><u>Remove</u></div>
               </div>
@@ -76,12 +80,70 @@
                   <div class="btn">-</div>
               </div>
               <div class="prices">
-                  <div class="amount">$3.19</div>
+                  <div class="amount">$31.9</div>
                   <div class="save"><u>Save for later</u></div>
                   <div class="remove"><u>Remove</u></div>
               </div>
         </div>
-      <hr> 
+        <div class="Cart-Items pad">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1488282396544-0212eea56a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" style={{ height="120px" }} />
+            </div>
+            <div class="about">
+                <p class="title">Colour wig</p>
+                <h3 class="subtitle">blonde</h3>
+                <img src="../img/veg.png" style={{ height="30px" }}/>             
+               </div>
+            <div class="counter">
+                <div class="btn">+</div>
+                <div class="count">1</div>
+                <div class="btn">-</div>
+            </div>
+            <div class="prices">
+                <div class="amount">$31.9</div>
+                <div class="save"><u>Save for later</u></div>
+                <div class="remove"><u>Remove</u></div>
+            </div>
+      </div>
+      <div class="Cart-Items pad">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1488282396544-0212eea56a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" style={{ height="120px" }} />
+        </div>
+        <div class="about">
+            <p class="title">Colour wig</p>
+            <h3 class="subtitle">blonde</h3>
+            <img src="../img/veg.png" style={{ height="30px" }}/>             
+           </div>
+        <div class="counter">
+            <div class="btn">+</div>
+            <div class="count">1</div>
+            <div class="btn">-</div>
+        </div>
+        <div class="prices">
+            <div class="amount">$31.9</div>
+            <div class="save"><u>Save for later</u></div>
+            <div class="remove"><u>Remove</u></div>
+        </div>
+  </div>  <div class="Cart-Items pad">
+    <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1488282396544-0212eea56a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" style={{ height="120px" }} />
+    </div>
+    <div class="about">
+        <p class="title">Colour wig</p>
+        <h3 class="subtitle">blonde</h3>
+        <img src="../img/veg.png" style={{ height="30px" }}/>             
+       </div>
+    <div class="counter">
+        <div class="btn">+</div>
+        <div class="count">1</div>
+        <div class="btn">-</div>
+    </div>
+    <div class="prices">
+        <div class="amount">$31.9</div>
+        <div class="save"><u>Save for later</u></div>
+        <div class="remove"><u>Remove</u></div>
+    </div>
+</div>
       <div class="checkout">
       <div class="total">
           <div>
@@ -92,6 +154,7 @@
       </div>
       <button class="button">Checkout</button></div>
  </div>
+</div>
 </div>
 <footer class="bottom">Copyright @2021 STACEY WIG STORE</footer>
  </body>
