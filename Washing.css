@@ -8,7 +8,7 @@ h1{
     font-family: 'Sofia',sans-serif;
 }
 .website{
-    opacity: 1;
+    opacity: 0;
 }
 header{
     display:flex;

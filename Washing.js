@@ -48,6 +48,11 @@ function hiddenbar(){
     }
 }
 
+function second(){
+    const continues = document.getElementById("secondmenu");
+    continues.style.display = 'none';
+    website.style.opacity = '1';
+}
 function gobackbutton(){
     if(boolean2 === true){
         document.getElementById("hiddenbar").style.visibility = 'hidden';
