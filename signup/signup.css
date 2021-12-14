@@ -1,46 +1,282 @@
-*{
-    margin: 0;
+body {
+  margin: 0;
+  font: 1em system-ui;
+  object-fit: fill;
 }
-h1{
-    text-align: center;
-    color:rgb(244,145,145);
-    margin: 10px 0 10px 0;
+.website {
+  font: 1em system-ui;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  color: rgb(244, 145, 145);
+  margin: 10px 0 10px 0;
+  font-family: "Sofia", sans-serif;
+}
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(255, 245, 245);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+.container .tag a {
+  text-decoration: none;
+  color: grey;
+}
+.tag {
+  margin-top: 1rem;
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: space-around;
+  vertical-align: middle;
+  color: rgb(244, 145, 145);
+  font-family: sofia, sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  width: 100%;
+  height: 3rem;
+  object-fit: cover;
+  background-image: url("../picture/photo-1595475884562-073c30d45670.jpg");
+  background-size: 1920px;
+  background-position: -1px -759px;
+  background-repeat: no-repeat;
+  padding-bottom: 2em;
+}
+nav {
+  color: rgb(255, 255, 255);
+  background-color: rgb(248, 199, 199);
+  width: 100%;
+  padding: 0;
+}
+.path ol {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1em 1em;
+  position: relative;
+}
+.path {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+}
+.path a::after {
+  display: inline-block;
+  color: #000;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+.combo {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.combo-txt {
+  background-color: #fff;
+  color: #000;
+  font: inherit;
+  line-height: 1;
+  padding: 0 0.25em 0 1.5em;
+  border: 0.125em solid #000;
+  border-right: none;
+  border-radius: 0.875em 0 0 0.875em;
+  background-image: url("http://simpleicon.com/wp-content/uploads/active-search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  flex-grow: 1;
+}
+.combo-txt:focus,
+.combo-txt:focus ~ * {
+  outline: none;
+  box-shadow: 0.125em 0.125em 0 #000;
+}
+.combo-btn {
+  background-color: #ff226c;
+  color: #000;
+  font: inherit;
+  line-height: 1.5;
+  padding: 0;
+  border: 0.125em solid #000;
+  border-radius: 0 0.875em 0.875em 0;
+  padding: 0 0.5em;
+}
+.bio {
+  color: rgb(68, 68, 68);
+  font: italic 1.3em "Times New Roman", "Times", serif;
+  margin: 20px 0 5px 60px;
+  max-width: 30%;
+}
+.intro {
+  display: flex;
+  flex: 1;
+  background-image: url(../picture/andrea-donato-lJFLGirYwV0-unsplash.jpg);
+  object-fit: cover;
 }
 
-header{
-    display: flex;
-    width: 100%;
-    height: 5%;
-    background-color: black;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: white;
+/* Add some padding inside the card container */
 
+ul {
+  list-style-type: none;
+  padding-left: 0%;
 }
-.container{
-    width: 100%;
-    height: 3rem;
-    background-color: rgb(255,245,245);
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
+.menu {
+  display: flex;
+  justify-content: flex-start;
 }
-.container .tag a{
-    text-decoration: none;
-    color: grey;
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: rgb(244, 145, 145);
+  color: rgb(255, 255, 255);
 }
-
-.tag{
-    margin-top: 1rem;
-    list-style: none;
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.navbar{
-    width:100%;
-    height: 10%;
-    background-image: url("picture/photo-1595475884562-073c30d45670.jpg");
-    background-size: 1920px;
-    background-position: -1px -759px;
-    background-repeat: no-repeat;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown content - hide by defualt */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #eeafaf;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.float-button {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: pink;
+  border: white 2px solid;
+}
+.intro {
+  position: relative;
+}
+.form-title {
+  color: #fff;
+  font: 0.3px "arial" sans;
+  padding: 2px 5px;
+  margin: auto;
+}
+.popup {
+  display: none;
+  z-index: 1;
+}
+.label {
+  display: flex;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  border: 5px solid #f1f1f1;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.icon {
+  font-size: 110px;
+  display: flex;
+  justify-content: center;
+  color: #dd94ac;
+}
+button {
+  background-color: #4286f4;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  cursor: grab;
+  width: 48%;
+}
+h1 {
+  text-align:center;
+  fone-size:18;
+  }
+  button:hover {
+  opacity: 0.8;
+  }
+  .formcontainer {
+  text-align: center;
+  margin: 24px 50px 12px;
+  }
+  .container {
+  padding: 16px 0;
+  text-align:left;
+  }
+  span.psw {
+  float: right;
+  padding-top: 0;
+  padding-right: 15px;
+  }
+  /* Change styles for span on extra small screens */
+  @media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  }
+.menu-icon{
+  font-size: 110px;
+  display: flex;
+  justify-content: center;
+  color: #dd94ac;
 }

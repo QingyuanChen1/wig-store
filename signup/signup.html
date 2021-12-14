@@ -1,14 +1,63 @@
-<link rel="stylesheet" href="../signup/signup.css">
-<div class="website">
+<!DOCTYPE html>
+<html>
+  <title>Simple Sign up from</title>
+  <head>
+      <link rel="stylesheet" href="../signup/signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  <body>
     <header>Free Shipping to Canada Over 100</header>
     <h1>Stacey Wig Store</h1>
+    <div class="menu-icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
     <ul class="container">
         <li class="tag"><a href="/">Home</a></li>
         <li class="tag"><a href="/">Wig Page</a></li>
-        <li class="tag"><a href="/">Styling Service</a></li>
+        <li class="tag dropdown"><a href="/styling-intro/styling.html">Styling Service</a> 
+            <div class="dropdown-content">
+            <a href="/styling-intro/styling.html">Intro</a>
+            <a href="/styling-booking/booking.html">Order</a>
+            </div>
+        </li>
         <li class="tag"><a href="/">Maintenance Service</a></li>
         <li class="tag"><a href="/">How to Use</a></li>
         <li class="tag"><a href="/">Contact Us</a></li>
     </ul>
-    <div class="navbar"></div>
-</div>
+    <div class="navbar"><p>Sign Up</p></div>
+    <nav class="path">
+        <ol>
+            <li class="path"><a href="#">Home</a></li>
+            <li class="path"><a href="#">Styling</a></li>
+            <li class="path">Intro</li>
+        </ol>
+
+    </nav>  
+    <main class="signup card">
+    <form action="/action_page.php">
+      <h1>SIGN UP</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="formcontainer">
+      <div class="form-container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="mail"><strong>E-mail</strong></label>
+        <input type="text" placeholder="Enter E-mail" name="mail" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <button type="submit"><strong>SIGN UP</strong></button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+    </main>
+    <footer class="bottom">Copyright @2021 STACEY WIG STORE</footer>
+  </body>
+</html>
