@@ -216,21 +216,21 @@ ul {
   bottom: 0;
   right: 0;
   background: pink;
-  border: white 2px solid ;
+  border: white 2px solid;
 }
 .intro {
   position: relative;
 }
-.form-title{
-  color:#fff;
+.form-title {
+  color: #fff;
   font: 0.3px "arial" sans;
   padding: 2px 5px;
   margin: auto;
 }
-.popup{
+.popup {
   display: none;
   z-index: 1;
 }
-.label{
+.label {
   display: flex;
 }
