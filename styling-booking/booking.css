@@ -412,9 +412,14 @@ u {
   margin: auto;
 }
 .popup {
-  display: none;
+  /* display: none; */
   z-index: 1;
 }
 .label {
   display: flex;
 }
+@media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  }
